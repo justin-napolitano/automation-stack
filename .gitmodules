@@ -1,0 +1,3 @@
+[submodule "signal-gateway"]
+	path = signal-gateway
+	url = https://github.com/justin-napolitano/signal_service.git
