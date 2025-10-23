@@ -1,0 +1,43 @@
+version: "3.9"
+networks: { assistant-net: { driver: bridge } }
+services:
+  signal-api:
+    image: bbernhard/signal-cli-rest-api:latest
+    restart: unless-stopped
+    env_file: [.env]
+    environment: { MODE: "${SIGNAL_API_MODE:-native}", TZ: "${TZ:-UTC}" }
+    volumes: ["${SIGNAL_DATA_DIR:-./signal-cli}:/home/.local/share/signal-cli"]
+    ports: ["127.0.0.1:8085:8080"]
+    networks: [assistant-net]
+  notifier-gateway:
+    build: ./notifier-gateway
+    restart: unless-stopped
+    env_file: [.env]
+    environment:
+      SIGNAL_API_BASE: "http://signal-api:8080"
+      SIGNAL_NUMBER: "${SIGNAL_NUMBER}"
+      GATEWAY_TOKEN: "${GATEWAY_TOKEN}"
+      TZ: "${TZ:-UTC}"
+    ports: ["127.0.0.1:${GATEWAY_PORT:-8787}:8787"]
+    depends_on: [signal-api]
+    networks: [assistant-net]
+  assistant-core:
+    build: ./assistant-core
+    restart: unless-stopped
+    env_file: ["./assistant-core/.env"]
+    depends_on: [signal-api, notifier-gateway]
+    ports: ["127.0.0.1:8088:8088"]
+    networks: [assistant-net]
+  weather-service:
+    build: ./weather-service
+    restart: unless-stopped
+    env_file: [.env]
+    environment:
+      CRON_SCHEDULE: "0 7 * * *"
+      NOTIFY_URL: "http://notifier-gateway:8787/notify"
+      CITY: "Orlando"
+      STATE: "FL"
+      TZ: "${TZ:-UTC}"
+    depends_on: [notifier-gateway]
+    ports: ["127.0.0.1:8789:8789"]
+    networks: [assistant-net]
