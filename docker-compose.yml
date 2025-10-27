@@ -36,7 +36,7 @@ services:
     ports: ["127.0.0.1:8088:8088"]
     networks: [assistant-net]
   weather-service:
-    build: ./weather-service
+    build: ./weather-servb
     restart: unless-stopped
     env_file: [.env]
     environment:
