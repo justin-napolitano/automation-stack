@@ -1,9 +1,0 @@
-[submodule "signal-gateway"]
-	path = signal-gateway
-	url = https://github.com/justin-napolitano/signal_service.git
-[submodule "assistant-framework"]
-	path = assistant-framework
-	url = https://github.com/justin-napolitano/assistant-framework.git
-[submodule "weather-servb"]
-	path = weather-servb
-	url = https://github.com/justin-napolitano/weather-servb.git
