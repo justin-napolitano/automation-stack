@@ -21,6 +21,13 @@ seoSecondaryKeywords:
   - ai assistant
   - skill services
 seoOptimized: true
+topicFamily: automation
+topicFamilyConfidence: 0.95
+topicFamilyNotes: >-
+  The blog post describes a personal automation platform integrating messaging, AI assistants,
+  modular skill microservices, and deployment with Docker Compose, which fits well with the
+  Automation family focused on scripts and projects automating workflows, deployment, and related
+  systems.
 ---
 
 # Building My Personal Automation Stack: Signal, AI Assistant, and Skills
@@ -84,3 +91,4 @@ Building this stack has been a fantastic learning experience in microservice arc
 Thanks for reading! If you're interested in personal automation or Signal integrations, I hope this inspires you to build your own stack. Feel free to reach out if you want to chat about the project or collaborate.
 
 Happy automating! 🚀
+
