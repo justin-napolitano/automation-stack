@@ -1,12 +1,27 @@
 ---
-slug: "github-automation-stack"
-title: "automation-stack"
-repo: "justin-napolitano/automation-stack"
-githubUrl: "https://github.com/justin-napolitano/automation-stack"
-generatedAt: "2025-11-23T08:15:41.793458Z"
-source: "github-auto"
+slug: github-automation-stack
+title: Personal Automation Stack Using Signal, AI Assistant, and Modular Skills
+repo: justin-napolitano/automation-stack
+githubUrl: https://github.com/justin-napolitano/automation-stack
+generatedAt: '2025-11-23T08:15:41.793458Z'
+source: github-auto
+summary: >-
+  Description of a personal automation platform integrating Signal messaging, an AI assistant with
+  LangChain, and modular skill microservices deployed via Docker Compose.
+tags:
+  - signal
+  - automation
+  - ai-assistant
+  - microservices
+  - docker-compose
+  - fastapi
+seoPrimaryKeyword: personal automation stack
+seoSecondaryKeywords:
+  - signal integration
+  - ai assistant
+  - skill services
+seoOptimized: true
 ---
-
 
 # Building My Personal Automation Stack: Signal, AI Assistant, and Skills
 
