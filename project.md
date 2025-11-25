@@ -7,8 +7,8 @@ githubUrl: https://github.com/justin-napolitano/automation-stack
 generatedAt: '2025-11-24T21:34:01.031Z'
 source: github-auto
 summary: >-
-  Learn to create an automation stack using Signal messaging, FastAPI, and
-  Docker Compose for seamless integration of microservices.
+  Learn to create an automation stack using Signal messaging, FastAPI, and Docker Compose for
+  seamless integration of microservices.
 tags:
   - fastapi
   - docker-compose
@@ -25,8 +25,8 @@ seoSecondaryKeywords:
   - ai-powered automation
   - skill-based microservices
 seoOptimized: true
-topicFamily: null
-topicFamilyConfidence: null
+topicFamily: automation
+topicFamilyConfidence: 1
 kind: project
 entryLayout: project
 showInProjects: true
@@ -105,3 +105,4 @@ automation-stack/
 ---
 
 *Note: Some assumptions were made about the `signal-gateway` directory and certain internal APIs based on the provided context.*
+
