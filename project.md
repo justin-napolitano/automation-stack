@@ -1,14 +1,14 @@
 ---
 slug: github-automation-stack
 id: github-automation-stack
-title: Personal Automation Stack with Signal and FastAPI
+title: Building a Personal Automation Stack with Signal and FastAPI
 repo: justin-napolitano/automation-stack
 githubUrl: https://github.com/justin-napolitano/automation-stack
 generatedAt: '2025-11-24T21:34:01.031Z'
 source: github-auto
 summary: >-
-  Build a personal automation stack using Signal messaging, FastAPI, and Docker
-  Compose for seamless integration and deployment.
+  Learn to create an automation stack using Signal messaging, FastAPI, and
+  Docker Compose for seamless integration of microservices.
 tags:
   - fastapi
   - docker-compose
@@ -20,10 +20,10 @@ tags:
 seoPrimaryKeyword: personal automation stack
 seoSecondaryKeywords:
   - signal messaging integration
-  - fastapi automation
-  - docker compose setup
+  - docker setup
+  - fastapi microservices
   - ai-powered automation
-  - microservices architecture
+  - skill-based microservices
 seoOptimized: true
 topicFamily: null
 topicFamilyConfidence: null
